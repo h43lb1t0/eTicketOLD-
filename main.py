@@ -25,7 +25,7 @@ print("")
 EMAIL = input('Email adresse: ')
 print("")
 print("")
-#main(ENTRY_URL,EVENTNR,AMOUNT,EMAIL)
+main(ENTRY_URL,EVENTNR,AMOUNT,EMAIL)
 print("")
 print('Den Anweisungen aus dem Wiki nun folgen')
 try:
