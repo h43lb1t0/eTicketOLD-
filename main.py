@@ -1,4 +1,4 @@
-from ticket import main
+from source/ticket import main
 from links import URL_BALL, URL_Party
 from qrCoder import qrCode
 from pdf import pdf

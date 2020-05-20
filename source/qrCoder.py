@@ -1,4 +1,3 @@
-import qrcode
 import time
 import pyqrcodeng
 
