@@ -1,7 +1,6 @@
 import fitz
 
-
-def pdf(AMOUNT,cords,input_file,output_dic,qr_dic):
+def pdf(AMOUNT,cords,input_file,output_dic,qr_dic): #A function that can be called via main.py and places the Qr-codes created in the function qrcode at the desired position on a pdf.#
     
     image_rectangle = fitz.Rect(cords)
     i = 0
