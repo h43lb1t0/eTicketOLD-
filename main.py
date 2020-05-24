@@ -29,7 +29,7 @@ EVENTNR = input('Event No.: ')
 print("")
 EMAIL = input('email address: ')
 print("")
-#main(ENTRY_URL,EVENTNR,AMOUNT,EMAIL)
+main(ENTRY_URL,EVENTNR,AMOUNT,EMAIL)
 print("")
 print('The wiki instructions should now be followed')
 try:
@@ -92,13 +92,13 @@ def vorlage_Ball(AMOUNT,cords):
 
 pdf_method = int(input('use fix cords (1) or use your own cords (2): '))
 
-""" def usr_cords():
+def usr_cords():
     x1= input('X1 Wert')
     x2= input('X2 Wert')
     x3= input('X3 Wert')
     x4= input('X4 Wert')
     cords = (int(x1),int(x2),int(x3),int(x4))
-    return cords """
+    return cords
 
 
 if pdf_method == 1:
@@ -110,16 +110,14 @@ if pdf_method == 1:
         cords = (450,20,550,120)
         vorlage_Afterparty(AMOUNT,cords)
 
-""" elif pdf_method == 2:
+elif pdf_method == 2:
         if event == 'b':
             cords = usr_cords()
-            print(cords)
             #vorlage_Ball(AMOUNT,cords)
 
         elif event == 'a':
             cords = usr_cords()
-            print(cords)
-            vorlage_Afterparty(AMOUNT,cords) """
+            vorlage_Afterparty(AMOUNT,cords)
 
 
     
