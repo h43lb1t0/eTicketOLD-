@@ -14,4 +14,3 @@ def pdf(AMOUNT,cords,input_file,output_dic,qr_dic):
         first_page.insertImage(image_rectangle, barcode_file)
         file_handle.save(output_file)
         print('Ticket Nr.' + str(i))
-

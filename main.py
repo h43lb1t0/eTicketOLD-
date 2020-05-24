@@ -4,7 +4,6 @@ from source.qrCoder import qrCode
 from source.pdf import pdf
 
 #####################################################################################################
-5
 def eventt():
     event = input('Are the tickets for the ball (b) or the afterparty (a)? Enter the according letter: ')
     if event == 'a':
@@ -87,11 +86,12 @@ pdf_method = int(input('use fix cords (1) or use your own cords (2): '))
 
 if pdf_method == 1:
     if event == 'b':
-     cords = 450,20,550,120
-     vorlage_Ball(AMOUNT,cords)
-    elif event == 'a':
+        cords = 900,20,550,120
+        vorlage_Ball(AMOUNT,cords)
+
+    if event == 'a':
         cords = 450,20,550,120
-    vorlage_Afterparty(AMOUNT,cords)
+        vorlage_Afterparty(AMOUNT,cords)
 
 elif pdf_method == 2:
         h
